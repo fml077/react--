@@ -9,4 +9,4 @@ class C extends Component {
     )
   }
 }
-export default A(C)
+export default A('警告')(C)

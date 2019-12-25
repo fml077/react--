@@ -10,4 +10,4 @@ class B extends Component {
   }
 }
 
-export default A(B)
+export default A('提示')(B)
