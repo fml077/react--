@@ -1,24 +1,35 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  // Switch,
+  Route,
+  Link
+} from "react-router";
 import logo from './logo.svg';
 import './App.css';
+import { I18nProvider } from '@lingui/react';
+import { Trans } from '@lingui/macro';
+import { ConfigProvider } from 'antd';
+import Header from './components/A';
+import Add from './components/B';
+import List from './components/C';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <ConfigProvider>
+    //   <I18nProvider language="zh">
+    //     <div className="App">
+    //       <header className="App-header">
+    //         {/* <Header></Header> */}
+    //       </header>
+    //       <Add></Add>
+    //       <List></List>
+    //     </div>
+    //   </I18nProvider>
+    // </ConfigProvider>
+    <div>
+      <Add></Add>
+      <List></List>
     </div>
   );
 }
