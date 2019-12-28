@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import A from './A'
 class C extends Component {
+  getName() {
+    return "我是C组件来自喵星人家族。"
+  }
   render() {
     return (
       <div>
