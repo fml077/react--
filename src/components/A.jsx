@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default(title) => WrappedComponent => class A extends Component {
   refc = (instance) => {
-    instance.getName && alert(instance.getName());
+    instance.getName && console.log(instance.getName());
   };  
   render() {
       // 过滤掉此非高阶组件额外的props(如这里的age, 在包装组件将不显示age), 而且不需要进行透传

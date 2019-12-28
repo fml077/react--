@@ -1,9 +1,22 @@
 import React, { Component } from 'react'
 import A from './A'
 class B extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: ''
+    }
+  }
+  inputChange = (e) => {
+    this.setState({
+      inputValue: e.target.value
+    })
+  }
   render() {
     return (
       <div>
+        <input type='text' value={this.state.inputValue} onChange={this.inputChange} />
+        <br />
         这是B组件,
         <br />
         姓名：{ this.props.name }
