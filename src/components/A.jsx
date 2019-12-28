@@ -4,13 +4,28 @@ export default(title) => WrappedComponent => class A extends Component {
   refc = (instance) => {
     instance.getName && console.log(instance.getName());
   };  
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: ''
+    }
+  }
+  onInputChange = (e) => {
+    this.setState({
+      value: e.target.value,
+    })
+  }
   render() {
       // 过滤掉此非高阶组件额外的props(如这里的age, 在包装组件将不显示age), 而且不需要进行透传
       const { age, ...otherProps } = this.props
+      const newProps = { 
+        value: this.state.value,
+        onInput: this.onInputChange
+      }
       // 将 props 注入到被包装的组件中。
       // 通常为 state 的值或者实例方法。
       const injectedProp = function somefun() { /* ……  */};
-
+    
       
       // 将props传递给被包装组件
       return (
@@ -19,7 +34,7 @@ export default(title) => WrappedComponent => class A extends Component {
             <div style={{color: 'red'}}>{title}</div>
           </div>
           <div className="main">
-            <WrappedComponent food="小鱼仔" ref={this.refc} injectedProp={injectedProp} {...otherProps} />
+            <WrappedComponent food="小鱼仔" ref={this.refc} injectedProp={injectedProp} {...otherProps} {...newProps} />
           </div>
         </div>
       )

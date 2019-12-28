@@ -7,6 +7,8 @@ class C extends Component {
   render() {
     return (
       <div>
+        <input type='text' {...this.props}/>
+        <br />
         这是C组件
         <br />
         姓名：{ this.props.name }
