@@ -5,7 +5,7 @@ export default(title) => Children => class A extends Component {
       return (
         <div className="header-container">
           <div className="header-top">
-            <div>{title}</div>
+            <div style={{color: 'red'}}>{title}</div>
           </div>
           <div className="main">
             <Children {...this.props}></Children>

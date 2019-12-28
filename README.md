@@ -1,4 +1,5 @@
-# react 高阶组件的运用
+# react 高阶组件的运用 demo2
+高阶组件传参应用
 
 ## Available Scripts
 

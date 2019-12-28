@@ -28,8 +28,8 @@ function App() {
     //   </I18nProvider>
     // </ConfigProvider>
     <div>
-      <B />
-      <C />
+      <B name="小黄鸡" age="2" />
+      <C name="喵姑娘" age="3"/>
     </div>
   );
 }
