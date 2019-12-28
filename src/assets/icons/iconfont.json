@@ -1,0 +1,30 @@
+{
+  "id": "1587815",
+  "name": "jd",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "953199",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "4237369",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "10026241",
+      "name": "分类",
+      "font_class": "fenleishouye",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}
