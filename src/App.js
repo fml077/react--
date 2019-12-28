@@ -11,8 +11,8 @@ import { I18nProvider } from '@lingui/react';
 import { Trans } from '@lingui/macro';
 import { ConfigProvider } from 'antd';
 import Header from './components/A';
-import Add from './components/B';
-import List from './components/C';
+import B from './components/B';
+import C from './components/C';
 
 function App() {
   return (
@@ -28,8 +28,8 @@ function App() {
     //   </I18nProvider>
     // </ConfigProvider>
     <div>
-      <Add></Add>
-      <List></List>
+      <B />
+      <C />
     </div>
   );
 }

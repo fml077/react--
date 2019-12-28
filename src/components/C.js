@@ -4,7 +4,7 @@ class C extends Component {
   render() {
     return (
       <div>
-        这是list组件
+        这是C组件
       </div>
     )
   }
