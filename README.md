@@ -1,6 +1,5 @@
-# react 高阶组件的运用 demo2
-高阶组件：通过ref访问包裹子组件中定义的的方法
-高阶组件：抽取包裹组件的公共状态
+# react 高阶组件的运用 demo3
+高阶组件：继承式高阶组件，操纵props、操纵生命周期
 
 ## Available Scripts
 

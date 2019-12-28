@@ -13,6 +13,8 @@ import { ConfigProvider } from 'antd';
 import Header from './components/A';
 import B from './components/B';
 import C from './components/C';
+import E from './components/E';
+import F from './components/F';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
     <div>
       <B name="小黄鸡" age="2" />
       <C name="喵姑娘" age="3"/>
+      <E />
+      <F />
     </div>
   );
 }
