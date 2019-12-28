@@ -10,6 +10,8 @@ class C extends Component {
         <br />
         年龄：{ this.props.age }
         <br />
+        爱好：{ this.props.food }
+        <br />
         <img style={{width: 200}} src={require('../assets/images/mm.jpeg')}></img>
       </div>
     )

@@ -8,7 +8,7 @@ export default(title) => Children => class A extends Component {
             <div style={{color: 'red'}}>{title}</div>
           </div>
           <div className="main">
-            <Children {...this.props}></Children>
+            <Children food="小鱼仔" {...this.props}></Children>
           </div>
         </div>
       )
