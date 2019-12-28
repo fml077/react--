@@ -1,5 +1,4 @@
 .tabbar-wrap {
-  /* height: 50px; */
   width: 100%;
   position: fixed;
   left: 0;
@@ -12,6 +11,12 @@
 a:hover, a:link, a:visited, a:active {
   text-decoration: none;
   color: #ccc;
+}
+.tabbar-children {
+  padding: 10px;
+}
+.tabbar-children .bg-img img {
+  max-width: 100%;
 }
 .tabbar-content {
   display: flex;

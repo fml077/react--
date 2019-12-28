@@ -20,31 +20,31 @@ const tabbarArr = [
     link: '/user'
   },
 ]
-export default class Tabbar extends Component {
+
+const Tabbar = (WrappedComponent) => class Tabbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      index: 0
-    }
-  }
-  onChange = (i) => {
-    this.setState({
-      index: i
-    })
   }
   render() {
     const url = window.location.href;
     return (
-      <div className='tabbar-wrap'>
-        <div className="tabbar-content">
-          {tabbarArr.map((item, index) => (
-            <Link to={item.link} className={'tabbar-item ' + (url.indexOf(item.link) > -1 ? 'active': '')} key={index}>
-              <span className={'iconfont ' + item.icon}></span>
-              <div className="bar-name">{item.text}</div>
-            </Link>
-          ))}
+      <div className="tabbar-container">
+        <div className="tabbar-children">
+          <WrappedComponent></WrappedComponent>
+        </div>
+        <div className='tabbar-wrap'>
+          <div className="tabbar-content">
+            {tabbarArr.map((item, index) => (
+              <Link to={item.link} className={'tabbar-item ' + (url.indexOf(item.link) > -1 ? 'active' : '')} key={index}>
+                <span className={'iconfont ' + item.icon}></span>
+                <div className="bar-name">{item.text}</div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     )
   }
 }
+
+export default Tabbar

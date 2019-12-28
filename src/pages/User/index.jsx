@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import Tabbar from '../../components/Tabbar'
 
-export default class Home extends Component {
+class User extends Component {
   render() {
     return (
-      <div>
-        这是User
-        <Tabbar></Tabbar>
+      <div className='bg-img'>
+        <img src={require('../../assets/images/user.jpg')} alt=""/>
       </div>
     )
   }
 }
+export default Tabbar(User)
