@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import Tabbar from './components/Tabbar'
+import Router from './router'
 export default class App extends Component {
   render() {
     return (
       <div>
-        <Tabbar />
+        <Router></Router>
+        {/* <Tabbar /> */}
       </div>
     )
   }

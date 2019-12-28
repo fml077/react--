@@ -1,11 +1,17 @@
 .tabbar-wrap {
   /* height: 50px; */
+  width: 100%;
   position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
-  border: 1px solid #ccc;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
   padding: 8px 0 8px;
+}
+a:hover, a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #ccc;
 }
 .tabbar-content {
   display: flex;
